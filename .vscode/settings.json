@@ -1,0 +1,15 @@
+{
+    "go.buildOnSave": "workspace",
+    "go.lintOnSave": "file",
+    "go.vetOnSave": "package",
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "go.docsTool": "gogetdoc"
+}
