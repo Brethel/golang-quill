@@ -4,15 +4,39 @@
     "go.vetOnSave": "package",
     "go.useCodeSnippetsOnFunctionSuggest": true,
     "go.formatTool": "goimports",
+    "go.docsTool": "gogetdoc",
     "go.useLanguageServer": true,
     "[go]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
-        }
+            "source.organizeImports": true,
+            "source.fixAll": true
+        },
+        "editor.defaultFormatter": "golang.go"
     },
-    "go.docsTool": "gogetdoc",
+    "files.eol": "\n",
+    "go.testFlags": [
+        "-v"
+    ],
+    "go.languageServerExperimentalFeatures": {
+        "diagnostics": true,
+        "documentLink": true
+    },
+    "go.gocodeAutoBuild": true,
     "go.toolsEnvVars": {
-       // "GO111MODULE": "on"
+        "CGO_ENABLED": "1",
+        "GOMOD": "",
+        "CGO_CFLAGS": "-g -O2",
+        "CGO_CPPFLAGS": "",
+        "CGO_CXXFLAGS": "-g -O2",
+        "CGO_FFLAGS": "-g -O2",
+        "CGO_LDFLAGS": "-g -O2",
+        "GOGCCFLAGS": "-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build354948885=/tmp/go-build -gno-record-gcc-switches",
+       // "GO111MODULE": "on",
+       // "GOFLAGS": "-mod=vendor",
+       // "GOARCH": "amd64",
+       // "GOOS": "linux",
+        "GOBIN": "${workspaceFolder}/bin"
+
     }
 }
