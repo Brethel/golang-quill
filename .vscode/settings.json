@@ -11,5 +11,8 @@
             "source.organizeImports": true
         }
     },
-    "go.docsTool": "gogetdoc"
+    "go.docsTool": "gogetdoc",
+    "go.toolsEnvVars": {
+       // "GO111MODULE": "on"
+    }
 }
