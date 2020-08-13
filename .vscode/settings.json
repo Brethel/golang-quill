@@ -24,6 +24,7 @@
     },
     "go.gocodeAutoBuild": true,
     "go.toolsEnvVars": {
+        "PATH": "$PATH:/usr/local/bin",
         "CGO_ENABLED": "1",
         "GOMOD": "",
         "CGO_CFLAGS": "-g -O2",

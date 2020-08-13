@@ -20,7 +20,6 @@ func main() {
 	}
 
 	var s = [][]byte{[]byte("hello"), []byte("world")}
-
 	fmt.Printf("%s\n", bytes.Join(s, []byte(", ")))
 
 }
