@@ -22,6 +22,12 @@
         "diagnostics": true,
         "documentLink": true
     },
+    "go.inferGopath": false,
+    "go.buildTags": "",
+    "go.buildFlags": [],
+    "go.lintFlags": [],
+    "go.vetFlags": [],
+    "go.coverOnSave": false,
     "go.gocodeAutoBuild": true,
     "go.toolsEnvVars": {
         "PATH": "$PATH:/usr/local/bin",
