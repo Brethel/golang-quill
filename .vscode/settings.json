@@ -1,8 +1,10 @@
 {
     "go.buildOnSave": "workspace",
+    "go.testOnSave": true,
     "go.lintOnSave": "file",
     "go.vetOnSave": "package",
     "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.autocompleteUnimportedPackages": true,
     "go.formatTool": "goimports",
     "go.docsTool": "gogetdoc",
     "go.useLanguageServer": true,
@@ -20,7 +22,7 @@
     ],
     "go.languageServerExperimentalFeatures": {
         "diagnostics": true,
-        "documentLink": true
+        "documentLink": true,
     },
     "go.inferGopath": false,
     "go.buildTags": "",
@@ -30,7 +32,7 @@
     "go.coverOnSave": false,
     "go.gocodeAutoBuild": true,
     "go.toolsEnvVars": {
-        "PATH": "$PATH:/usr/local/bin",
+        "PATH": "$PATH:/usr/bin:/usr/local/bin",
         "CGO_ENABLED": "1",
         "GOMOD": "",
         "CGO_CFLAGS": "-g -O2",
@@ -42,8 +44,7 @@
         "GO111MODULE": "auto",
        // "GOARCH": "amd64",
        // "GOOS": "linux",
-        "GOBIN": "${workspaceFolder}/bin",
-        "GOFLAGS": "-mod=vendor"
-
+        "GOBIN": "/home/brethel/go/bin",
+        "GOFLAGS": ""
     }
 }
